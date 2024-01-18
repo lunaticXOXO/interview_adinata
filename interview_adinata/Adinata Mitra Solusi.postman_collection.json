@@ -1,0 +1,617 @@
+{
+	"info": {
+		"_postman_id": "4457ac3b-6522-4bc9-be72-1edf1e2279dd",
+		"name": "Adinata Mitra Solusi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14260473"
+	},
+	"item": [
+		{
+			"name": "Faculty",
+			"item": [
+				{
+					"name": "Get Faculty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/faculties/show",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"faculties",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Faculty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"SA\",\r\n    \"faculty_name\" : \"Sastra\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/faculties/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"faculties",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Faculty By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/faculties/find/TK",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"faculties",
+								"find",
+								"TK"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Faculty",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : \"TK\",\r\n    \"faculty_name\" : \"Fakultas Teknik\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/faculties/update/TK",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"faculties",
+								"update",
+								"TK"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Faculty",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/faculties/delete/AK",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"faculties",
+								"delete",
+								"AK"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Major",
+			"item": [
+				{
+					"name": "Add Major New",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"major\" : {\r\n        \"idmajor\" : \"SJ\",\r\n    \"akreditasi\" : \"Sangat Baik\",\r\n    \"majorname\" : \"Sastra Jepang\",\r\n    \"tahunsk\" : \"2023/SK/11\"\r\n    \r\n   },\r\n    \"faculty\" : {\r\n        \"id\" : \"SA\"\r\n       \r\n    } \r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/major/add_new",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"major",
+								"add_new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Major",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/major/show",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"major",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Major",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"major\" : {\r\n        \"idmajor\" : \"SI\",\r\n    \"akreditasi\" : \"Sangat Baik\",\r\n    \"majorname\" : \"Sastra Inggirs\",\r\n    \"tahunsk\" : \"2023/SK/07\"\r\n   },\r\n    \"faculty\" : {\r\n        \"id\" : \"FS\" \r\n    }   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/major/update/SI",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"major",
+								"update",
+								"SI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Major",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/major/delete/SP",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"major",
+								"delete",
+								"SP"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lecturer",
+			"item": [
+				{
+					"name": "Add Lecturer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lecturer\" : {\r\n        \"nip\" : \"1120002\",\r\n        \"adress\" : \"JL Cikapayang\",\r\n        \"city\" : \"BDG\",\r\n        \"name\" : \"Ken Ratri\",\r\n        \"telephone\" : \"0878990175223\"\r\n    },\r\n    \"major\" : {\r\n        \"idmajor\" : \"IF\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/lecturer/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"lecturer",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lecturer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/lecturer/show",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"lecturer",
+								"show"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stream Lecturer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/lecturer/stream/112006",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"lecturer",
+								"stream",
+								"112006"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Lecturer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lecturer\" : {\r\n        \"nip\" : \"112006\",\r\n        \"adress\" : \"JL Dago 320\",\r\n        \"city\" : \"BDG\",\r\n        \"name\" : \"Hans Christian\",\r\n        \"telephone\" : \"08789901758890\"\r\n    },\r\n    \"major\" : {\r\n        \"idmajor\" : \"IF\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/lecturer/update/112006",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"lecturer",
+								"update",
+								"112006"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Lecturer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/lecturer/delete/112006",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"lecturer",
+								"delete",
+								"112006"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Lecturer Stream",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/lecturer/search_stream/fin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"lecturer",
+								"search_stream",
+								"fin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "Add Students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"students\" : {\r\n        \"nim\" : \"1119004\",\r\n        \"adress\" : \"JL Pagarsih\",\r\n        \"city\" : \"BDG\",\r\n        \"name\" : \"Calvin J\",\r\n        \"telephone\" : \"087880575491\"\r\n    },\r\n    \"major\" : {\r\n        \"idmajor\" : \"IF\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/students/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update students",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"students\" : {\r\n        \"nim\" : \"1119028\",\r\n        \"adress\" : \"JL Ir H Djuanda 294 B\",\r\n        \"city\" : \"BDG\",\r\n        \"name\" : \"Aji Parama\",\r\n        \"telephone\" : \"087880575491\"\r\n    },\r\n    \"major\" : {\r\n        \"idmajor\" : \"IF\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/students/update/119028",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students",
+								"update",
+								"119028"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/students/show",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"students",
+								"show"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "Add Subjects",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subjects\" : {\r\n        \"code\" : \"IF-101\",\r\n        \"nama\" : \"Algoritma Pemrograman\",\r\n        \"semester\" : 1,\r\n        \"sks\" : 3\r\n    },\r\n   \"major\" : {\r\n        \"idmajor\" : \"IF\"\r\n   },\r\n    \"lecturer\" : {\r\n        \"nip\" :\"1120002\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/subjects/add_bymajor/IF",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"subjects",
+								"add_bymajor",
+								"IF"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update subjects",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subjects\" : {\r\n        \"code\" : \"IF-101\",\r\n        \"nama\" : \"Algoritma Pemrograman Dasar\",\r\n        \"semester\" : 1,\r\n        \"sks\" : 4\r\n    },\r\n   \"major\" : {\r\n        \"idmajor\" : \"IF\"\r\n   },\r\n    \"lecturer\" : {\r\n        \"nip\" :\"1120002\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8080/api/subjects/update/IF-101",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"subjects",
+								"update",
+								"IF-101"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

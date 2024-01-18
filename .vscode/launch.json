@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-InterviewAdinataApplication<interview_adinata>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.domain.InterviewAdinataApplication",
+            "projectName": "interview_adinata",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
