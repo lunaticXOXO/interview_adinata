@@ -41,6 +41,6 @@
 ### Mata kuliah
 * Menambah data mata kuliah berdasarkan jurusan menggunakan stream
 * Update data mata kuliah.
-* Memilih mata kuliah untuk mahasiswa.
+
 
 
