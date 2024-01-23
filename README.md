@@ -1,5 +1,3 @@
-# Interview PT.Adinata Mitra Solusi (Backend Developer - Junior)
-
 ## Topik : Sistem Informasi Akademik.
 ### Programming Languange : Java Springboot
 ### Objek : Fakultas, Jurusan, Dosen, Mahasiswa, Matakuliah
